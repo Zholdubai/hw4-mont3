@@ -10,7 +10,7 @@ async def on_startup(_):
 
 
 fsmAdminMenu.register_hendler_fsmAdminGetUser(dp)
-
+notification.register_hendlers_notification(dp)
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)

@@ -7,3 +7,5 @@ pychache/
 *.so
 media
 bot.sqlite3
+.gitignore
+bot2.sqlite3

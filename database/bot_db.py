@@ -26,8 +26,9 @@ async def sql_command_random(message):
                                                f'Description: {result[r_u][4]}\n'
                                                f'Price: {result[r_u][5]}\n\n'
                                                f'{result[r_u][1]}')
-async def sql_command_all(message):
+async def sql_command_all():
     return cursor.execute('SELECT * FROM users').fetchall()
+
 async def sql_command_delete(id):
     cursor.execute('DELETE FROM users WHERE id == ?',(id))
     db.commit()

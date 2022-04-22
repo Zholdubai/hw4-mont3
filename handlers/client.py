@@ -7,5 +7,4 @@ async def show_random_user(message:types.Message):
     await bot_db.sql_command_random(message)
 
 def register_hendlers_client(dp:Dispatcher):
-    pass
     dp.register_message_handler(show_random_user, commands=['random'])
